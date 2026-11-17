@@ -11,24 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
 
     <style>
-      .hero {
-        width: 1200px;
-        height: 80px;
-        background-color: white;
-        display: flex;
-        margin: 0px auto;
-      }
-
-      .text-sections {
-        display: grid;
-        grid-template-columns: 100% 75% 75% 75%;
-        padding: 10px;
+      @font-face {
+        font-family: GailRock;
+        src: url(Gail-Rock-Regular.otf);
       }
 
       h1 {
+        margin: 10px;
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 900%;
+        font-weight: 600;
+        font-size: 45px;
       }
 
       body {
@@ -39,52 +32,105 @@
       }
 
       h2 {
-        font-family: "Oooh Baby", cursive;
-        font-weight: 900;
+        font-family: "GailRock";
+        font-weight: 400;
         font-style: normal;
       }
 
+      h3 {
+        font-family: "Oooh Baby", cursive;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 23px;
+      }
+
+      h4 {
+        font-family: "Oooh Baby", cursive;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+      }
+
+
       .container {
         display: grid;
-        grid-template-columns: 17% 17% 17%;
-        gap: 45px;
+        grid-template-columns: auto;
         max-width: 1200px;
-        margin: 20% auto;
-        justify-content: center;
+        text-align: center;
+      }
+
+     .container div {
+        grid-row-start: 1;
+        grid-row-end: 5;
+        width: 90%;
+        color: #000;
+        font-size: 30px;
         text-align: center;
       }
 
       .recipe-icons {
-        min-height: 150px;
-        min-width: 150px;
+        min-height: 10px;
+        min-width: 10px;
+      }
+
+      .hero {
+        width: 1200px;
+        height: 80px;
+        background-color: white;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      .text-sections {
+        display: grid;
+        grid-template-columns: 10% 100% 
+        padding: 5px;
+      }
+
+      .title-section {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 25px;
+        margin: 90px 0;
       }
     </style>
   </head>
-  
-  
+
+
   <body>
     <div class="hero">
-    <div class="text-sections">
-      <h1>EG</h1>
-      <h2>SWEET</h2>
-      <h2>SAVOURY</h2>
-      <h2>FROZEN</h2>
+      <div class="text-sections">
+        <h1>eg</h1>
+        <h1> </h1>
+        <h2>RECIPES</h2>
+      </div>
     </div>
+    <div class="title-section">
+      <h4>Elena's Digital Recipe Archive</h4>
     </div>
     <div class="container">
-      <div class="recipe-icons">
+      <div>
+        <div class="recipe-icons">
         <img src="pntbtrcookie.png" alt="a crispy peanut butter cookie covered in sugar, with chunks of peanuts strewed throughout">
-        <h2>Sweet</h2>
+        <h3>Sweet</h3>
+      </div>
       </div>
       <div class="recipe-icons">
+        <div>
         <img src="gnocchipic.png" alt="a sheet pan of gnocchi, broccoli, and pieces of sausage- covered in olive oil, lemon juice and chili flakes">
-        <h2>Savoury</h2>
+        <h3>Savoury</h3>
+        </div>
       </div>
       <div class="recipe-icons">
+        <div>
         <img src="icecream.png" alt="A metal container of partially scooped vanilla icecream">
-        <h2>Frozen</h2>
+        <h3>Frozen</h3>
+        </div>
       </div>
     </div>
-    
+
   </body>
 </html>
