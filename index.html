@@ -73,13 +73,14 @@
       nav h1 {
         display: inline;
         float: left;
-        margin-left: 40px;
+        margin-left: -30px;
         margin-top: 6.5px;
       }
 
       nav h2 {
         display: inline;
         float: right;
+        margin-right: -50;
         position: relative;
         right: 150px;
       }
@@ -91,20 +92,28 @@
       }
 
 /* Once multi page is active!!!!! */
-/*       nav li {
+      nav li {
         display: inline-block;
         margin-right: 20px;
       }
 
-      nav a {
+      nav a { 
         text-decoration: none;
-        color: #357e42;
+        color: black;
       }
 
       nav a:hover {
-        color: #ffa3bc;
-      } */
-
+        color: #D35269;
+      }
+      
+      sections a {
+        text-decoration: none;
+        color: black;
+      }
+      
+        sections a:hover {
+        color: #D35269;
+      }
       
       .container {
         display: grid;
@@ -147,25 +156,27 @@
   <body>
     <nav>
       <ul>
-        <h1>eg</h1>
-        <h2>RECIPES</h2>
+        <h1><a href="index.html">eg</a></h1>
+        <h2><a href="options.html">RECIPES</a></h2>
       </ul>
     </nav>
+    <sections>
     <div class="title-section">
       <h4>Elena's Digital Recipe Archive</h4>
     </div>
     <div class="container">
     <div class="recipe-icons">
           <img src="pntbtrcookie.png" alt="a crispy peanut butter cookie covered in sugar, with chunks of peanuts strewed throughout">
-          <h3>Sweet</h3>
+          <h3><a href="options.html">Sweet</a></h3>
       </div>
     <div class="recipe-icons">
           <img src="gnocchipic.png" alt="a sheet pan of gnocchi, broccoli, and pieces of sausage- covered in olive oil, lemon juice and chili flakes">
-          <h3>Savoury</h3>
+          <h3><a href="options.html">Savoury</a></h3>
       </div>
     <div class="recipe-icons">
           <img src="icecream.png" alt="A metal container of partially scooped vanilla icecream">
-          <h3>Frozen</h3>
+          <h3><a href="options.html">Frozen</a></h3>
+          </sections>
         </div>
     </div>
   </body>
