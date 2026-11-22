@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>egvozdek Final Project</title>
+    <!-- Created by Elena Gvozdek, Nov 14th, 2026 -->
+
+    <!--FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
+
+
+    <style>
+      /* Font for "Recipes" in the nav bar */
+      @font-face {
+        font-family: GailRock;
+        src: url(Gail-Rock-Regular.otf);
+      }
+
+      /* Font for the "eg" logo */
+            /* Font for the "eg" logo */
+      h5 {
+        margin: 10px;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 45px;
+      }
+      
+      h1 {
+        margin: 10px;
+        font-family: "Oooh Baby", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 65px;
+        text-align: center;
+      }
+
+      /* Background image of recipe book + gingham */
+      body {
+        background-image: url("recipebackground.png");
+        width: 1200px;
+        height: 1300px;
+        margin: 5px;
+      }
+
+      /* eg logo */
+      h2 {
+        font-family: "GailRock";
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* Sweet, Savoury, Frozen text */
+      h3 {
+        font-family: "GailRock", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+      }
+
+      /* Elenas digital recipe archive text */
+      h4 {
+        font-family: "Oooh Baby", cursive;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      /* nav bar at the top */
+      nav {
+        background-color: white;
+        margin: 0px;
+        padding-left: 30px;
+        width: 1200px;
+        height: 70px;
+        margin-top: -5px;
+        margin-left: -5px;
+        margin-bottom: 170px;
+      }
+
+      nav h1 {
+        display: inline;
+        float: left;
+        margin-left: -30px;
+        margin-top: 6.5px;
+      }
+
+      nav h2 {
+        display: inline;
+        float: right;
+        margin-right: -50px;
+        position: relative;
+        right: 150px;
+      }
+
+      ul {
+        font-weight: 700;
+        list-style-type: none;
+        text-align: left;
+      }
+
+      /* Once multi page is active!!!!! */
+      nav li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      nav a:hover {
+        color: #D35269;
+      }
+
+      
+      .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .recipe-icons {
+        min-height: 10px;
+        min-width: 10px;
+        gap: 5px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <h5><a href="index.html">eg</a></h5>
+        <h2><a href="options.html">RECIPES</a></h2>
+      </ul>
+    </nav>
+      <div class="container">
+      <div class="grid-item">
+        <h1>German Chocolate Cookies</h1>
+
+        <h2>By Samantha Seneviratne</h2>
+
+        <h3>A simple yet delicous double chocolate cookie strewn with walnuts, shredded coconut and chocolate chips. These cookies are so good they should come with a warning.</h3>
+      </div>
+      <div class="recipe-icons">
+        <img src="bigcookie.png" alt="A close up shot of chocolate cookies with melted chocolate chips and walnuts on top">
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="grid-item">
+        <h2>Ingredients</h2>
+        <!--INGREDIENT CHECKLIST -->
+        <p class="ingredientlist">
+          <input type="checkbox" id="ingredient1" name="ingredient1" value="1 tablespoon canola oil">
+          <label for="ingredient1"> 1 tbsp canola oil</label><br>
+          <input type="checkbox" id="ingredient2" name="ingredient2" value="½ pound tofu, cut in small dice">
+          <label for="ingredient2">½ pound tofu, cubed</label><br>
+          <input type="checkbox" id="ingredient3" name="ingredient3" value="1 large garlic clove, minced">
+          <label for="ingredient3">1 large garlic clove, minced</label><br>
+          <input type="checkbox" id="ingredient4" name="ingredient4" value="1 teaspoon grated or minced fresh ginger">
+          <label for="ingredient4">1 tsp grated/minced fresh ginger</label><br>
+          <input type="checkbox" id="ingredient5" name="ingredient5" value=" ¼ teaspoon red chili flakes">
+          <label for="ingredient5"> ¼ tsp red chili flakes</label><br>
+          <input type="checkbox" id="ingredient6" name="ingredient6" value="Soy sauce to taste">
+          <label for="ingredient6">Soy sauce to taste</label><br>
+          <input type="checkbox" id="ingredient7" name="ingredient7" value="16-ounce bag baby spinach, rinsed">
+          <label for="ingredient7">16-ounce bag baby spinach, rinsed</label><br>
+          <input type="checkbox" id="ingredient8" name="ingredient8" value="2 tablespoons toasted sesame seeds">
+          <label for="ingredient8">2 tbsps toasted sesame seeds</label><br>
+          <input type="checkbox" id="ingredient9" name="ingredient9" value="1 teaspoon sesame oil">
+          <label for="ingredient9">1 tsp sesame oil</label>
+          <br>
+        </p>
+      </div>
+
+      <div class="grid-item">
+        <h2>Preparation</h2>
+        <h3>Step 1</h3>
+        <p>
+          Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+        </p>
+
+        <h3> Step 2 </h3>
+
+        <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
+
+        <h3>Tip</h3>
+
+        <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
+        
+  </body>
