@@ -31,7 +31,7 @@
 /* Background image of recipe book + gingham */
       body {
         background-image: url("homepage.png");
-        width: 1200px;
+        width: 1440px;
         margin: 5px;
       }
       
@@ -64,7 +64,7 @@
         background-color: white;
         margin: 0px;
         padding-left: 30px;
-        width: 1200px;
+        width: 1440px;
         height: 70px;
         margin-top: -5px;
         margin-left: -5px;
@@ -73,14 +73,14 @@
       nav h1 {
         display: inline;
         float: left;
-        margin-left: -30px;
+        margin-left: -25px;
         margin-top: 6.5px;
       }
 
       nav h2 {
         display: inline;
         float: right;
-        margin-right: -50;
+        margin-right: -100;
         position: relative;
         right: 150px;
       }
@@ -106,27 +106,29 @@
         color: #D35269;
       }
       
-      sections a {
+      .sections a {
         text-decoration: none;
         color: black;
       }
       
-        sections a:hover {
+      .sections a:hover {
         color: #D35269;
       }
       
-      .container {
+     .container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 800px;
         text-align: center;
+       justify-content: center;
         margin: 0 auto;
+        gap: 75px;
       }
 
       .recipe-icons {
         min-height: 10px;
         min-width: 10px;
-        gap: 5px;
+        text-align: center;
       }
       
       .recipe-icons h3{
@@ -160,7 +162,7 @@
         <h2><a href="options.html">RECIPES</a></h2>
       </ul>
     </nav>
-    <sections>
+    <div class="sections">
     <div class="title-section">
       <h4>Elena's Digital Recipe Archive</h4>
     </div>
@@ -176,8 +178,7 @@
     <div class="recipe-icons">
           <img src="icecream.png" alt="A metal container of partially scooped vanilla icecream">
           <h3><a href="options.html">Frozen</a></h3>
-          </sections>
         </div>
-    </div>
+      </div>
   </body>
 </html>
