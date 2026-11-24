@@ -30,7 +30,7 @@
       /* Background image of recipe book + gingham */
       body {
         background-image: url("optionspage.png");
-        width: 1200px;
+        width: 1440px;
         height: 1300px;
         margin: 5px;
       }
@@ -64,7 +64,7 @@
         background-color: white;
         margin: 0px;
         padding-left: 30px;
-        width: 1200px;
+        width: 1440px;
         height: 70px;
         margin-top: -5px;
         margin-left: -5px;
@@ -92,7 +92,6 @@
         text-align: left;
       }
 
-      /* Once multi page is active!!!!! */
       nav li {
         display: inline-block;
         margin-right: 20px;
@@ -107,23 +106,47 @@
         color: #D35269;
       }
 
-      
       .container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 800px;
         text-align: center;
+        justify-content: center;
         margin: 0 auto;
+        column-gap: 50px;
+        row-gap: 30px;
+        margin-top: -70px;
       }
 
       .recipe-icons {
         min-height: 10px;
         min-width: 10px;
-        gap: 5px;
+        text-align: center;
       }
+
+/*       
+  Code snippet from w3 schools tutorial on shaking images     */
+      .recipe-icons:hover {
+        animation: shake 3s;
+        animation-iteration-count: infinite;
+      }
+
+  @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
     </style>
-    
   </head>
+
   <body>
     <nav>
       <ul>
@@ -133,35 +156,35 @@
     </nav>
     <div class="container">
       <div class="recipe-icons">
-       <a href="recipepage.html"><img src="grmnchoccookies.png" alt="a close up of a double chocolate cookies with chocolate chips and walnuts"></a>
+        <a href="recipepage.html"><img src="grmnchoccookies.png" alt="a close up of a double chocolate cookies with chocolate chips and walnuts"></a>
       </div>
-        
-              <div class="recipe-icons">
+
+      <div class="recipe-icons">
         <img src="orangecake.png" alt="an up close shot of an orange olive oil cake with 2 slices cut into it">
       </div>
-        
-              <div class="recipe-icons">
+
+      <div class="recipe-icons">
         <img src="strawbcake.png" alt="a birds-eye shot of a circular vanilla cake with strawberries on top and a spoon laying in the pan">
       </div>
-        
-              <div class="recipe-icons">
+
+      <div class="recipe-icons">
         <img src="beercake.png" alt="a chocolatey guiness cake on a white plate with thick cream cheese frosting on top">
       </div>
-      
-          <div class="recipe-icons">
+
+      <div class="recipe-icons">
         <img src="bananablondies.png" alt="square banana bread blondies lying on top of crumpled parchment paper">
       </div>
-      
+
       <div class="recipe-icons">
         <img src="applemuffins.png" alt="apple crumble muffins with white glaze on top of marbled countertop">
       </div>
-      
-      
+
+
       <div class="recipe-icons">
         <img src="chocchipcookies.png" alt="chocolate chip cookies with sea salt on a piece of crumpled parchment paper">
       </div>
-      
-            <div class="recipe-icons">
+
+      <div class="recipe-icons">
         <img src="peanutcookie.png" alt="a close up shot a crackly peanut butter cookie with coarse sugar on top and peanuts sticking out">
       </div>
 
