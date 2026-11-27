@@ -13,174 +13,205 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
   </head>
-  
-    <style>
-      
-      /* Font for "Recipes" in the nav bar */
-      @font-face {
-        font-family: GailRock;
-        src: url(Gail-Rock-Regular.otf);
-      }
-      
-      @font-face {
-        font-family: GailRockSemiBold;
-        src: url(Gail-Rock-Semibold.otf);
-      }
 
-      h1 {
-        margin: 10px;
-        font-family: "Oooh Baby", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-size: 60px;
-        text-align: center;
-      }
-      
+  <style>
+    /* Font for "Recipes" in the nav bar */
+    @font-face {
+      font-family: GailRock;
+      src: url(Gail-Rock-Regular.otf);
+    }
 
-      html {
+    @font-face {
+      font-family: GailRockSemiBold;
+      src: url(Gail-Rock-Semibold.otf);
+    }
+
+    html {
       margin: 0 auto;
       background-color: white;
       width: 1440px;
-      }
-      
-      /* Background image of recipe book + gingham */
-      body {
-        background-image: url("recipepage.png");
-        background-repeat: repeat-y;
-        width: 1440px;
-        height: 1300px;
-        margin: 5px;
-      }
+    }
 
-      /* eg logo */
-      h2 {
-        font-family: "Handjet", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-size: 35px;
-      }
+    /* Background image of recipe book + gingham */
+    body {
+      background-image: url("recipepage.png");
+      background-repeat: repeat-y;
+      width: 1440px;
+      height: 1602px;
+      margin: 5px;
+    }
 
-      /* Sweet, Savoury, Frozen text */
-      h3 {
-        font-family: "GailRockSemiBold", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 20px;
-      }
+    /* eg logo */
+    h2 {
+      font-family: "Handjet", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 35px;
+    }
 
-      h4 {
-        font-family: "GailRock", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 17px;
-        text-align: center;
-      }
+    /* For ingredients, and step headings*/
+    h3 {
+      font-family: "GailRockSemiBold", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      font-size: 24px;
+    }
 
-      ul, p, h4{
-        font-family: "GailRock", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 15px;
-        text-align: left;
-      }
 
-      /* nav bar at the top */
-      nav {
-        background-color: white;
-        margin: 0px;
-        padding-left: 30px;
-        width: 1440px;
-        height: 70px;
-        margin-top: -5px;
-        margin-left: -5px;
-        gap: 20px;
-      }
+/*     ul,
+    p,
+    h4 {
+      font-family: "GailRock", sans-serif;
+      font-weight: 50;
+      font-style: normal;
+      font-size: 20px;
+      text-align: left;
+      margin-top: -15px;
+      line-height: 1.4;
+    } */
 
-      nav h1 {
-        font-family: "Handjet", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-size: 45px;
-        display: inline;
-        float: left;
-        margin-left: 5px;
-        margin-top: 6.5px;
-      }
+    /* nav bar at the top */
+    nav {
+      background-color: white;
+      margin: 0px;
+      padding-left: 30px;
+      width: 1440px;
+      height: 70px;
+      margin-top: -5px;
+      margin-left: -5px;
+      gap: 20px;
+    }
 
-      nav h2 {
-        font-size: 25px;
-        font-family: "GailRock";
-        font-weight: 400;
-        font-style: normal;
-        display: inline;
-        float: right;
-        margin-right: 90;
-        right: 150px;
-      }
+    nav h1 {
+      font-family: "Handjet", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 45px;
+      display: inline;
+      float: left;
+      margin-left: 5px;
+      margin-top: 6.5px;
+    }
 
-      ul {
-        font-weight: 700;
-        list-style-type: none;
-        text-align: left;
-      }
+    nav h2 {
+      font-size: 25px;
+      font-family: "GailRock";
+      font-weight: 400;
+      font-style: normal;
+      display: inline;
+      float: right;
+      margin-right: 90;
+      right: 150px;
+    }
 
-      nav li {
-        display: inline-block;
-        margin-right: 20px;
-      }
+    ul {
+      font-weight: 700;
+      text-align: left;
+    }
 
-      nav a {
-        text-decoration: none;
-        color: black;
-      }
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
 
-      .sections a {
-        text-decoration: none;
-        color: black;
-      }
-      
-      nav a:hover {
-        color: #D35269;
-      }
-      
-      .sections a:hover {
-        color: #D35269;
-      }
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
 
-      .maincontent {
-        width: 1200px;
-      }
+    .sections a {
+      text-decoration: none;
+      color: black;
+    }
 
-      .ingredientlist {
-        width: 290;
-      }
+    nav a:hover {
+      color: #D35269;
+    }
 
-      .container {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        gap: 20px;
-        max-width: 1200px;
-        margin-top: 20px;
-        margin-left: 100px;
-      }
+    .sections a:hover {
+      color: #D35269;
+    }
 
-      .grid-item {
-        min-height: 150px;
-        max-width: 450px;
-        padding: 20px;
-      }
+    .maincontent {
+      width: 1200px;
+    }
 
-      .recipe-icons {
-        margin-top: -40px;
-        margin-left: 200px;
-        min-height: 10px;
-        min-width: 10px;
-        width: 450px;
-        gap: 5px;
-      }
-      
-    </style>
+    .ingredientlist {
+      width: 290;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 20px;
+      max-width: 1200px;
+      margin-top: 20px;
+      margin-left: 100px;
+    }
+
+    .ingredient-list {
+      margin-top: 20px;
+      margin-left: 150px;
+      min-height: 10px;
+      min-width: 10px;
+      width: 380px;
+      gap: 5px;
+      font-family: "GailRock", sans-serif;
+/*       font-weight: 50; */
+/*       font-style: normal; */
+      font-size: 20px;
+      text-align: left;
+      margin-top: -15px;
+      line-height: 1.4;
+    }
+    
+
+    .step-list {
+      margin-top: 20px;
+      margin-left: 120px;
+      min-height: 10px;
+      min-width: 10px;
+      width: 470px;
+      gap: 5px;
+      font-family: "GailRock", sans-serif;
+      font-weight: 50;
+      font-style: normal;
+      font-size: 18px;
+      text-align: left;
+      margin-top: -15px;
+      line-height: 1.4;
+    }    
+    
+    .recipe-about {
+      margin-top: 150px;
+      margin-left: 150px;
+      min-height: 150px;
+      width: 450px;
+      font-family: "Oooh Baby", cursive;
+      font-weight: 100;
+      font-size: 25px;
+    }
+    
+    .recipe-about h4 {
+      font-family: "GailRock", sans-serif;
+      font-weight: 50;
+      font-style: normal;
+      font-size: 20px;
+      text-align: left;
+      margin-top: -15px;
+      line-height: 1.4;
+    }
+    
+    .recipe-pic {
+      margin-top: 95px;
+      margin-left: 200px;
+      min-height: 10px;
+      min-width: 10px;  
+    }
+     
+  </style>
   </head>
+
   <body>
     <nav>
       <ul>
@@ -190,25 +221,25 @@
       </ul>
     </nav>
     <div class="container">
-      <div class="grid-item">
-        
+      <div class="recipe-about">
+
         <h1>German Chocolate Cookies</h1>
         <h4>A simple yet delicous double chocolate cookie strewn with walnuts, shredded coconut and chocolate chips. These cookies are so good they should come with a warning.</h4>
-    
+
       </div>
-      <div class="recipe-icons">
+      <div class="recipe-pic">
         <img src="bigcookie.png" alt="A close up shot of chocolate cookies with melted chocolate chips and walnuts on top">
       </div>
     </div>
 
 
     <div class="container">
-      <div class="grid-item">
+      <div class="ingredient-list">
         <h3>Ingredients</h3>
-<p>
+        <p>
         <ul>
-          <li>1 cup/128 grams all-purpose flour </li>
-          <li>>½ cup/47 grams natural cocoa powder</li>
+          <li> 1 cup/128 grams all-purpose flour </li>
+          <li>½ cup/47 grams natural cocoa powder</li>
           <li>½ teaspoon baking soda</li>
           <li>½ teaspoon kosher salt</li>
           <li>113 grams unsalted butter, at room temperature</li>
@@ -220,22 +251,24 @@
           <li>1 cup/170 grams chopped bittersweet chocolate</li>
           <li>1 cup/119 grams chopped pecans</li>
         </ul>
-      </p>
+        </p>
       </div>
 
-      <div class="grid-item">
+      <div class="step-list">
         <h3>Step 1</h3>
         <p>
-          Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+          Heat oven to 350 degrees. In a medium bowl, whisk together the flour, cocoa powder, baking soda and salt. In a large bowl, beat butter, granulated sugar and brown sugar together with an electric mixer on medium speed until fluffy, about 2 minutes. Beat in the egg and vanilla until smooth.
         </p>
 
         <h3> Step 2 </h3>
 
-        <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
+        <p>
+          Reduce the speed to low and beat in the flour mixture. Add coconut, chocolate and pecans and mix to just combine.</p>
 
-        <h3>Tip</h3>
+        <h3>Step 3</h3>
 
-        <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
-    </div>
-  </body>
+        <p>
+          Portion the dough in 2 tbsp scoops and roll them into balls. Place them on lined baking sheets, 2 inches apart. Bake the cookies until dry on top but still soft in the center, about 10 minutes. Remove from the oven and immediately tap the sheets against a work surface to deflate them slightly. Let cool.</p>
+      </div> 
+</body>
 </html>
